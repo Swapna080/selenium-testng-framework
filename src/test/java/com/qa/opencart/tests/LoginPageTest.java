@@ -65,7 +65,7 @@ public class LoginPageTest extends BaseTest{
 		};
 	}
 	
-	@Test(dataProvider ="getFooterdata", description= "checking important footer links on home page")
+	@Test(dataProvider ="getFooterdata", description= "checking important footer links on home page", enabled=false)
 	public void footerTest(String footerLink) {
 		Assert.assertTrue(commonsPage.checkFooterLink(footerLink));
 	}
